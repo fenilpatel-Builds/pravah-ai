@@ -2,7 +2,7 @@
 ### Supervity AutoPilot Hackathon: Ahmedabad Edition (Round 1)
 
 **Target Duration:** Exactly 4:45 – 5:00 Minutes  
-**Presenter:** Fenil Patel (Hunters' Org)  
+**Presenter:** Fenil Patel (Team NexAura)  
 **Tone:** Confident, enterprise-focused, professional, and clear.
 
 ---
@@ -10,7 +10,7 @@
 ### [0:00 – 0:45] Introduction & The Enterprise Problem
 - **Visual:** Show Supervity Auto dashboard ([auto.supervity.ai](https://auto.supervity.ai/)) with the **Pravah AI** workflow open.
 - **Voiceover:**
-  > *"Hello judges. I'm Fenil Patel from team Hunters' Org, presenting **Pravah AI** — our autonomous enterprise AI Employee built on Supervity Auto for Domain B: Vendor Onboarding at Ashvaka Industries Group in Ahmedabad.*
+  > *"Hello judges. I'm Fenil Patel from **Team NexAura**, presenting **Pravah AI** — our autonomous enterprise AI Employee built on Supervity Auto for Domain B: Vendor Onboarding at Ashvaka Industries Group in Ahmedabad.*
   > *In heavy industrial conglomerates like Ashvaka — spanning cement, infrastructure, energy, and logistics — vendor onboarding is traditionally burdened by severe operational drag. Between September 3rd and October 9th alone, 130 vendor registration requests were filed — roughly 105 per month. Processing a single vendor manually takes 35 minutes of tedious cross-checking, back-and-forth emails, and duplicate searching. That’s over 60 hours of high-cost human labour wasted every single month.*
   > *Pravah AI delivers true operational antigravity. It autonomously ingests registration packets via Outlook, runs 21 deterministic compliance checks, executes multi-turn vendor chases, updates Supabase in real-time, and routes true exceptions to human decision-makers."*
 

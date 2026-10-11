@@ -1,7 +1,7 @@
 # Pravah AI — Round 1 Submission Brief
 ### Supervity AutoPilot Hackathon: Ahmedabad Edition
 **Domain B: Vendor & Procurement Lifecycle | Track B1: Vendor Onboarding**  
-**Team Name:** Hunters' Org  
+**Team Name:** Team NexAura  
 **Team Member:** Fenil Patel (`fenil8918@gmail.com`)  
 **Repository:** [https://github.com/fenilpatel-Builds/pravah-ai](https://github.com/fenilpatel-Builds/pravah-ai)  
 **Supervity Auto Workspace:** `[INSERT_YOUR_SUPERVITY_WORKSPACE_URL]`  
