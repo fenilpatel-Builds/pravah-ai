@@ -135,7 +135,7 @@ python tools/simulate_exception_duplicate.py
 ---
 
 ## 👥 Hackathon Team
-- **Team Name:** Hunters' Org
+- **Team Name:** Team NexAura
 - **Project:** Pravah AI (`pravah-ai`)
 - **Domain:** Domain B — Vendor & Procurement Lifecycle (Track B1)
 - **Edition:** Supervity AutoPilot Hackathon — Ahmedabad Edition (October 2026)
