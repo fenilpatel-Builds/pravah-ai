@@ -1,0 +1,20 @@
+﻿requirement_id,applies_to,document,mandatory,accepted_forms,validity_check,fields_cross_checked
+DR-01,Every vendor registered under GST,GST registration certificate (Form GST REG-06),Yes,Certificate downloaded from the GST portal,GSTIN structure and check character; state code agrees with the principal place of business and with the declared state; validity dates for casual or non-resident registrations,"Legal name, trade name, PAN inside GSTIN, constitution, address"
+DR-02,Vendor not registered under GST (declared N),Declaration of non-registration under GST,Yes,Signed declaration on the vendor's letterhead,Signed; names the reason and carries the PAN,"Name, PAN"
+DR-03,Every vendor,PAN of the vendor entity,Yes,"PAN card copy, e-PAN, or PAN details printout","PAN structure; fourth character C for a company, F for a firm or LLP, P for a proprietor","PAN, name"
+DR-04,Every vendor,Bank proof,Yes,"Cancelled cheque leaf with the account holder's name printed, or a bank letter on the bank's letterhead signed and stamped",IFSC structure; holder name printed or letter signed and stamped,"Account holder, account number, IFSC"
+DR-05,Private or public limited company,Certificate of incorporation,Yes,Also the fresh certificate of incorporation when the company name has changed,Issued by the Registrar of Companies,"Legal name, CIN, PAN where printed"
+DR-06,Limited liability partnership,LLP certificate of incorporation (Form 16),Yes,,Issued by the Registrar,"Legal name, LLPIN"
+DR-07,Partnership firm,Partnership deed,Yes,First pages naming the firm and partners and the signature page,Signed by the partners,"Firm name, partners"
+DR-08,Proprietorship,Shop and establishment registration certificate,Yes,Registration certificate or intimation receipt,Issued by the local authority,"Trade name, proprietor name"
+DR-09,Vendor declares MSME status,Udyam registration certificate,Yes,Udyam certificate only; an Udyog Aadhaar memorandum is not accepted,Udyam number structure,"Enterprise name (legal name, or trade name for a proprietorship)"
+DR-10,"Categories MANPOWER, SECURITY, HOUSEKEEPING",Contract labour licence,Yes,,Not lapsed; see expiry rules,Name
+DR-11,"Categories MANPOWER, SECURITY, HOUSEKEEPING",EPF registration certificate,Yes,,Establishment code,"Name, PAN"
+DR-12,"Categories MANPOWER, SECURITY, HOUSEKEEPING",ESIC registration certificate,Yes,,Employer code,Name
+DR-13,Category SECURITY,PSARA licence,Yes,,Not lapsed; covers the state of operation,Name
+DR-14,Category LAB_TESTING,NABL accreditation certificate,Yes,,Not lapsed; discipline covers the tests bought,Name
+DR-15,Category TRANSPORT,GTA declaration for FY 2026-27,Yes,Annexure V on the vendor's letterhead,For the current financial year and signed,"Name, GSTIN"
+DR-16,"Categories CIVIL_WORKS, EQUIP_RENTAL, SCAFFOLDING",ISO 45001 certificate,Yes,,Not lapsed,Name
+DR-17,"Categories RMC, CABLE, ELECTRICAL, SOLAR, SAFETY_PPE",ISO 9001 certificate,Yes,,Not lapsed,Name
+DR-18,"Categories MANPOWER, SECURITY, HOUSEKEEPING, CIVIL_WORKS, EQUIP_RENTAL, SCAFFOLDING",Insurance certificate,Yes,Employees' compensation policy for labour categories; contractor's all risk or plant and machinery cover for works,Period of insurance covers the verification date,Insured name
+DR-19,Any vendor,"Company profile, brochures, other papers",No,,Not verified,

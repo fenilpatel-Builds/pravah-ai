@@ -1,0 +1,78 @@
+﻿table,plain_table,column,plain_column,meaning
+Document_Requirements,document_requirement,requirement_id,requirement_id,"Requirement code, DR-01 to DR-19."
+Document_Requirements,document_requirement,applies_to,applies_to,"Which vendors the requirement covers: by GST status, constitution (company, LLP, partnership, proprietorship), purchase category code, or an MSME declaration."
+Document_Requirements,document_requirement,document,document_name,"The document the vendor must send, for example GST registration certificate (Form GST REG-06) or ISO 45001 certificate."
+Document_Requirements,document_requirement,mandatory,is_mandatory,"Yes if the document must be received; No for optional papers such as a company profile, which are not verified."
+Document_Requirements,document_requirement,accepted_forms,accepted_forms,"Which versions of the document are accepted in its place, for example a cancelled cheque or a signed and stamped bank letter; blank when only one form exists."
+Document_Requirements,document_requirement,validity_check,validity_check,"What makes the document acceptable on its own, for example the GSTIN structure, the PAN fourth character, or not lapsed on the verification date."
+Document_Requirements,document_requirement,fields_cross_checked,fields_cross_checked,"Values on this document that must agree with the other documents, for example legal name, PAN or account holder; blank when nothing is compared."
+Verification_Rules,verification_rule,rule_id,rule_id,"Rule code. PRS = presence, LEG = legibility, VAL = validity, EXP = expiry, XDC = cross-document, DUP = master check, CHS = chase cadence, HND = handover."
+Verification_Rules,verification_rule,area,rule_area,"The group the rule belongs to, in words: Presence, Legibility, Validity, Expiry, Cross-document, Master check, Chase cadence or Handover."
+Verification_Rules,verification_rule,rule,rule_text,"The rule itself in one or two sentences, as the desk applies it."
+Verification_Rules,verification_rule,applies_to,applies_to,"Which requests or documents the rule covers, for example every vendor, GST-registered vendors, or msme_declared = Y."
+Verification_Rules,verification_rule,evidence,evidence,"Which documents or tables the rule reads to decide, for example the GST certificate and the PAN document, or Vendor_Master_Extract."
+Verification_Rules,verification_rule,if_not_met,if_not_met,"What the desk does when the rule fails, usually a chase for a named document or a stop for human review; blank for chase cadence and handover rows."
+Onboarding_Requests,onboarding_request,request_id,request_id,"Onboarding request number, VOR-26- followed by four digits; quoted in the subject of every email about the request."
+Onboarding_Requests,onboarding_request,raised_on,raised_on,"Date the buyer raised the request. Formats vary (25-09-2026, 25.09.2026, 30/09/2026, 2026-09-29, 30 Sep 2026, Oct 1, 2026, 22-09-26); numeric dates that do not start with the year put the day first."
+Onboarding_Requests,onboarding_request,raised_by,buyer_name,Name of the buyer at Ashvaka who wants this vendor.
+Onboarding_Requests,onboarding_request,raised_by_email,buyer_email,The buyer's email address at ashvakagroup.in.
+Onboarding_Requests,onboarding_request,company_code,company_code,"SAP code of the group company that will buy: AI10 Ashvaka Infrastructure, AC20 Ashvaka Cement and Building Materials, AE30 Ashvaka Energy, AL40 Ashvaka Logistics and Warehousing."
+Onboarding_Requests,onboarding_request,plant,plant_code,"SAP plant code of the site, for example 1002 = Sanand Industrial Park Project, 2002 = Rajkot RMC Plant, 4001 = Bhiwandi Distribution Centre (full list in 00_INDEX)."
+Onboarding_Requests,onboarding_request,category,purchase_category,"Purchase category code, such as EQUIP_RENTAL, CIVIL_WORKS, MANPOWER, SECURITY or TRANSPORT; it decides which extra documents the vendor must send."
+Onboarding_Requests,onboarding_request,business_need,business_need,"The buyer's free-text reason, for example Crane and DG set hire for Rajkot RMC Plant."
+Onboarding_Requests,onboarding_request,vendor_name_as_typed,vendor_name_as_typed,"The vendor's name as the buyer typed it. It can be informal, with an M/s prefix or a short suffix, so it is not the legal name."
+Onboarding_Requests,onboarding_request,vendor_contact_name,vendor_contact_name,Person at the vendor the buyer gave as the contact; chases go to this person.
+Onboarding_Requests,onboarding_request,vendor_contact_email,vendor_contact_email,The contact's email address; capitalisation varies.
+Onboarding_Requests,onboarding_request,vendor_contact_phone,vendor_contact_phone,"The contact's mobile number, written +91 followed by ten digits."
+Onboarding_Requests,onboarding_request,constitution_declared,constitution_declared,"Legal form the vendor declared: private or public limited company, LLP, partnership or proprietorship, written several ways (Pvt Ltd Company, Private Ltd, Sole Proprietor, Partnership Firm)."
+Onboarding_Requests,onboarding_request,state_declared,state_declared,"State the vendor says it supplies from, written in full, for example Gujarat or Maharashtra."
+Onboarding_Requests,onboarding_request,city_declared,city_declared,"City the vendor declared, for example Anand or Bhiwandi."
+Onboarding_Requests,onboarding_request,msme_declared,msme_declared,"Y if the vendor says it is a registered MSME (it must then send a Udyam certificate), N if not."
+Onboarding_Requests,onboarding_request,gst_registered_declared,gst_registered_declared,Y if the vendor says it is registered under GST; N means a signed non-registration declaration replaces the GST certificate.
+Onboarding_Requests,onboarding_request,estimated_annual_spend_inr,estimated_annual_spend_inr,"Buyer's estimate of yearly spend with the vendor in rupees. Formats vary: 66,00,000.00, ₹ 66,00,000.00, INR 66,00,000.00, Rs. 66,00,000/-, plain digits, and western comma grouping."
+Onboarding_Requests,onboarding_request,slp_registration_id,portal_registration_id,"Reference on the supplier registration portal, SR- followed by seven digits."
+Onboarding_Requests,onboarding_request,status,request_status,Desk status: Documents awaited (nothing received yet) or Documents received.
+Onboarding_Chase_Log,chase_log,log_id,log_id,"Row number of the log, CL- followed by five digits."
+Onboarding_Chase_Log,chase_log,request_id,request_id,The onboarding request the email belongs to.
+Onboarding_Chase_Log,chase_log,action,action,"What was sent: Document checklist sent (the first email listing every document), Chase 1 or Chase 2."
+Onboarding_Chase_Log,chase_log,round,chase_round,"0 = document checklist, 1 = first chase, 2 = second chase."
+Onboarding_Chase_Log,chase_log,sent_at,sent_at,"When the email went out. Mostly 2026-09-07 10:17:00 in IST; some rows use 28-09-2026 17:13, and some are UTC with a Z or carry a +05:30 offset."
+Onboarding_Chase_Log,chase_log,sent_by,sent_by,Desk staff member who sent it.
+Onboarding_Chase_Log,chase_log,sent_to,sent_to,Vendor address the email went to.
+Onboarding_Chase_Log,chase_log,cc,cc,"Address copied, normally the buyer who raised the request."
+Onboarding_Chase_Log,chase_log,items_requested,email_body,"The full text of the email, listing each document asked for or each problem found."
+Onboarding_Chase_Log,chase_log,thread_id,thread_id,"Mailbox thread reference, B1-T followed by four digits, shared by every message about the request."
+Onboarding_Chase_Log,chase_log,message_id,message_id,Email Message-ID of this outgoing mail; vendor replies quote it in their In-Reply-To header.
+Received_Documents,received_document,request_id,request_id,The onboarding request the attachment was filed against.
+Received_Documents,received_document,received_at,received_at,"When the email carrying the file arrived, IST, as 2026-09-07 17:41:00."
+Received_Documents,received_document,from_address,from_address,"Address the email came from: usually the vendor contact, sometimes another vendor address, a personal mailbox, or a buyer forwarding the papers."
+Received_Documents,received_document,mailbox_file,mailbox_file,Path of the .eml file in mailbox/inbox/ that carried the attachment.
+Received_Documents,received_document,attachment_name,attachment_name,"File name as the vendor sent it, for example pan copy.pdf or IMG_20260909_169381.pdf; the name does not reliably say what the file is."
+Received_Documents,received_document,stored_as,stored_path,"Where the file is saved under documents/<request_id>/, renamed with a number only when a name repeats."
+Received_Documents,received_document,pages,page_count,"Number of pages, 1 to 4; a file with several pages can hold more than one document."
+Received_Documents,received_document,size_kb,size_kb,File size in kilobytes.
+Vendor_Master_Extract,vendor_master,LIFNR,vendor_number,"SAP vendor number, six digits, for example 200100."
+Vendor_Master_Extract,vendor_master,NAME1,name_line_1,"Vendor name as stored on the master, first 35 characters; capitalisation and suffix style vary."
+Vendor_Master_Extract,vendor_master,NAME2,name_line_2,"Rest of the name when it runs past 35 characters, for example Ltd; usually blank."
+Vendor_Master_Extract,vendor_master,SORTL,search_term,"Short search key, the first ten letters of the name in capitals without spaces."
+Vendor_Master_Extract,vendor_master,STRAS,street,Street address.
+Vendor_Master_Extract,vendor_master,ORT01,city,City.
+Vendor_Master_Extract,vendor_master,REGIO,state_code,"Two-letter state code, for example GJ = Gujarat, MH = Maharashtra, RJ = Rajasthan (not the two-digit GST state code)."
+Vendor_Master_Extract,vendor_master,PSTLZ,pin_code,Six-digit postal PIN code.
+Vendor_Master_Extract,vendor_master,LAND1,country,"Country code, IN for India."
+Vendor_Master_Extract,vendor_master,TELF1,phone,"Phone number, +91 followed by ten digits."
+Vendor_Master_Extract,vendor_master,SMTP_ADDR,email,Vendor email address on file.
+Vendor_Master_Extract,vendor_master,J_1IPANNO,pan,"Vendor PAN, ten characters; blank on some older records."
+Vendor_Master_Extract,vendor_master,STCD3,gstin,"Vendor GSTIN, fifteen characters; blank on some older records."
+Vendor_Master_Extract,vendor_master,BANKS,bank_country,"Country of the bank account, IN."
+Vendor_Master_Extract,vendor_master,BANKL,ifsc,"IFSC of the vendor's bank branch, eleven characters."
+Vendor_Master_Extract,vendor_master,BANKN,bank_account_number,Bank account number the vendor is paid into.
+Vendor_Master_Extract,vendor_master,KOINH,account_holder,Name of the bank account holder.
+Vendor_Master_Extract,vendor_master,MSME_FLAG,msme_flag,"Y if the vendor is recorded as an MSME, N if not."
+Vendor_Master_Extract,vendor_master,UDYAM_NO,udyam_number,"Udyam registration number, in the form UDYAM-GJ-09-4740105; blank for non-MSME vendors."
+Vendor_Master_Extract,vendor_master,KTOKK,account_group,"SAP account group: ZDOM = domestic vendor, ZMSE = domestic MSME vendor."
+Vendor_Master_Extract,vendor_master,CATEGORY,purchase_category,"Main purchase category the vendor supplies, using the same codes as the onboarding requests."
+Vendor_Master_Extract,vendor_master,ERDAT,created_on,"Date the vendor was created on the master, dd.mm.yyyy, between 2014 and 2025."
+Vendor_Master_Extract,vendor_master,SPERR,posting_block,X = blocked for posting (payments and invoices stopped); blank = active.
+Vendor_Master_Extract,vendor_master,LOEVM,deletion_flag,X = marked for deletion; blank otherwise.
+Vendor_Master_Extract,vendor_master,BUKRS_EXTENDED,company_codes_extended,"Group company codes the vendor is already set up for, separated by semicolons, for example AE30;AI10."

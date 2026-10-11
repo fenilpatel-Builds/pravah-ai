@@ -1,0 +1,16 @@
+﻿Workbook_Contents
+Autopilot Ahmedabad: Vendor Onboarding enterprise export
+"System of origin: SAP S/4HANA Business Partner (vendor master extract), supplier registration queue, vendor onboarding mailbox vendor.onboarding@ashvakagroup.in"
+Organisation: Ashvaka Industries Group (fictional). Currency INR. Timezone IST (UTC+05:30).
+Data as of: 09 Oct 2026 18:00 IST
+"Sheets: Onboarding_Requests, Document_Requirements, Verification_Rules, Vendor_Master_Extract, Onboarding_Chase_Log, Received_Documents, Field_Dictionary"
+"Folders: documents/ (one folder per request holding every attachment received so far, as the vendor named it); mailbox/inbox/ (emails received in vendor.onboarding@ashvakagroup.in up to the as-of time (.eml)); mailbox/staged_replies/ (vendor replies that arrive only after the desk sends the matching chase or request); mailbox/mailbox_index.csv (one row per message; release_when says what releases each staged reply); reference/ (Verification_Rule_Set.md and .pdf (rules, chase cadence, holiday calendar, contacts))"
+"Treat 09 Oct 2026, 18:00 IST as the current time, and keep the business date as a setting in your build."
+Send outbound mail only to mailboxes you control. Every address in this pack is fictional.
+"Staged replies are released by your team when the condition in mailbox_index.csv is met, by hand or with a simple automation, and should be shown in the demo."
+Company codes: AI10 Ashvaka Infrastructure Limited; AC20 Ashvaka Cement and Building Materials Limited; AE30 Ashvaka Energy Limited; AL40 Ashvaka Logistics and Warehousing Limited
+Plants: 1001 Ahmedabad Head Office (AI10); 1002 Sanand Industrial Park Project (AI10); 1003 Dahej Terminal Expansion Project (AI10); 1004 Vadodara Ring Road Package 3 (AI10); 2001 Vadodara Grinding Unit (AC20); 2002 Rajkot RMC Plant (AC20); 3001 Bhuj Solar Park Phase 2 (AE30); 4001 Bhiwandi Distribution Centre (AL40)
+Working days are Monday to Friday excluding the group holidays listed in the rule set.
+"Fully synthetic. No real company, person, account or identifier."
+"Import into your own systems of record, document store and mail channel, then work through them."
+"Google integrations are in beta for this event: do not use Google Drive, Sheets or Gmail for this data."
