@@ -44,7 +44,7 @@ Pravah AI is an autonomous enterprise AI Employee engineered for **Ashvaka Indus
 - **Strong Scope:** 100% Complete (Format & checksum validations, name normalization engine, Ashvaka working-day holiday calendar, multi-turn staged reply ingestion).
 
 ### 8. How an Evaluator Sends Your Auto a New Record
-1. Send an email to the Desk Mailbox: `[YOUR_MAILBOX_1_ADDRESS@outlook.com]`
+1. Send an email to the Desk Mailbox: `ashvaka.desk.pravah@outlook.com`
 2. **Subject:** `Vendor registration | VOR-26-0567 | Sankalp Equipment Hire Private Limited`
 3. **First Line of Body:** `On behalf of: Meera Amin <meera.amin@sankalpequipmenthi.co.in>`
 4. **Attachments:** Attach the 6 sample PDFs from [`pack_B1/dataset/documents/VOR-26-0567/`](https://github.com/fenilpatel-Builds/pravah-ai/tree/main/pack_B1/dataset/documents/VOR-26-0567).

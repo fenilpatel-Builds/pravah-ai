@@ -10,7 +10,8 @@ This document specifies the exact node-by-node configuration required to build *
 - **Workflow Name:** `Pravah AI - Vendor Onboarding Employee`
 - **Domain:** Domain B — Vendor & Procurement Lifecycle
 - **Track:** Track B1 — Vendor Onboarding
-- **Trigger:** Inbound email to connected Microsoft Outlook Mailbox 1 (The Desk)
+- **Trigger:** Inbound email to connected Microsoft Outlook Mailbox 1 (`ashvaka.desk.pravah@outlook.com`)
+- **Redirect Sink:** Mailbox 2 (`ashvaka.world.pravah@outlook.com`)
 - **Primary System of Record:** Supabase Cloud PostgreSQL (`pravah-vendorflow`)
 
 ```mermaid

@@ -17,7 +17,7 @@ You can test Pravah AI by sending a live email to the intake mailbox with an onb
 ---
 
 ### Step 1: Send a Test Email
-- **To:** `[YOUR_MAILBOX_1_ADDRESS@outlook.com]` *(Configured Desk Mailbox)*
+- **To:** `ashvaka.desk.pravah@outlook.com` *(Configured Desk Mailbox)*
 - **Subject:** `Vendor registration | VOR-26-0567 | Sankalp Equipment Hire Private Limited`
 - **First Line of Body (Crucial for Virtual Identity):**
   ```text

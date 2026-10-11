@@ -14,19 +14,19 @@ CREATE TABLE IF NOT EXISTS public."contact_map" (
     created_at timestamptz DEFAULT timezone('utc'::text, now())
 );
 
--- Seed initial contact mappings
--- NOTE: Replace 'your_mailbox_2@outlook.com' with your actual second Outlook address!
+-- Seed initial contact mappings with your live Outlook accounts
 INSERT INTO public."contact_map" (pack_address, redirect_to, role_description)
 VALUES
-    ('vendor.onboarding@ashvakagroup.in', 'YOUR_MAILBOX_1@outlook.com', 'Desk Mailbox (Mailbox 1 - Triggers AI Employee)'),
-    ('vendor.master@ashvakagroup.in', 'YOUR_MAILBOX_2@outlook.com', 'Master Data Team (Verified Handover Target)'),
-    ('meera.amin@sankalpequipmenthi.co.in', 'YOUR_MAILBOX_2@outlook.com', 'Vendor Contact (Sankalp Equipment Hire)'),
-    ('farhan.shah@ashvakagroup.in', 'YOUR_MAILBOX_2@outlook.com', 'Buyer (AC20 Rajkot RMC Plant)'),
-    ('foram.shukla@ashvakagroup.in', 'YOUR_MAILBOX_2@outlook.com', 'Procurement Lead (AC20 / Approver)'),
-    ('ronak.trivedi@ashvakagroup.in', 'YOUR_MAILBOX_2@outlook.com', 'Procurement Lead (AI10 / Approver)'),
-    ('manan.kothari@ashvakagroup.in', 'YOUR_MAILBOX_2@outlook.com', 'Procurement Lead (AE30 / Approver)'),
-    ('priyanka.sheikh@ashvakagroup.in', 'YOUR_MAILBOX_2@outlook.com', 'Procurement Lead (AL40 / Approver)')
-ON CONFLICT (pack_address) DO NOTHING;
+    ('vendor.onboarding@ashvakagroup.in', 'ashvaka.desk.pravah@outlook.com', 'Desk Mailbox (Mailbox 1 - Triggers AI Employee)'),
+    ('vendor.master@ashvakagroup.in', 'ashvaka.world.pravah@outlook.com', 'Master Data Team (Verified Handover Target)'),
+    ('meera.amin@sankalpequipmenthi.co.in', 'ashvaka.world.pravah@outlook.com', 'Vendor Contact (Sankalp Equipment Hire)'),
+    ('farhan.shah@ashvakagroup.in', 'ashvaka.world.pravah@outlook.com', 'Buyer (AC20 Rajkot RMC Plant)'),
+    ('foram.shukla@ashvakagroup.in', 'ashvaka.world.pravah@outlook.com', 'Procurement Lead (AC20 / Approver)'),
+    ('ronak.trivedi@ashvakagroup.in', 'ashvaka.world.pravah@outlook.com', 'Procurement Lead (AI10 / Approver)'),
+    ('manan.kothari@ashvakagroup.in', 'ashvaka.world.pravah@outlook.com', 'Procurement Lead (AE30 / Approver)'),
+    ('priyanka.sheikh@ashvakagroup.in', 'ashvaka.world.pravah@outlook.com', 'Procurement Lead (AL40 / Approver)')
+ON CONFLICT (pack_address) DO UPDATE 
+SET redirect_to = EXCLUDED.redirect_to;
 
 -- Table 2: Verification Audit Log
 CREATE TABLE IF NOT EXISTS public."verification_audit" (
