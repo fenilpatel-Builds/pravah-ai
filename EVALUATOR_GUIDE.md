@@ -77,3 +77,24 @@ Evaluators can view live table updates at:
   - `verification_audit`: Immutable rule evaluation logs with timestamps.
   - `chase_log`: Record of autonomous outbound chase emails.
   - `review_tasks`: Human-in-the-Loop exception approvals.
+
+---
+
+## 🖥️ Pravah AI Enterprise Operations Console (Self-Serve Evaluation)
+Evaluators can also launch and explore our full interactive Operations Console in seconds:
+```bash
+python tools/api_operator.py
+```
+Open **[http://localhost:8080](http://localhost:8080)** (or open `console/index.html` directly in any web browser):
+1. **📊 Overview & Metrics:** Real-time KPI dashboard (105 run rate, 62.5 hours saved, 87.4% clean pass rate).
+2. **📋 Live Intake Queue:** Complete searchable directory of all 130 requests with category badges and statuses.
+3. **⚖️ Auto Policies & Rules:** Full matrix of all 24 decoupled Ashvaka business rules.
+4. **🛡️ Human Review Queue:** Interactive HITL exception resolver for Rule DUP-01 (Probable Duplicate PAN).
+5. **🧪 Evaluator Testing Sandbox:** Interactive payload editor allowing judges to test any vendor payload against the deterministic compliance engine live.
+
+---
+
+## 🔗 Quick Evaluation Links
+- **Supervity Auto Live Canvas:** [https://auto.supervity.ai/u/alpha/agent/01a12a32-3e3d-702c-9c5f-dc55476b8ef0](https://auto.supervity.ai/u/alpha/agent/01a12a32-3e3d-702c-9c5f-dc55476b8ef0) (Organization: `NexAura`)
+- **GitHub Repository:** [https://github.com/fenilpatel-Builds/pravah-ai](https://github.com/fenilpatel-Builds/pravah-ai)
+- **Supabase Cloud Database:** [https://nacjwuajfopkxgmkpipw.supabase.co](https://nacjwuajfopkxgmkpipw.supabase.co)

@@ -4,7 +4,7 @@
 **Team Name:** Team NexAura  
 **Team Member:** Fenil Patel (`fenil8918@gmail.com`)  
 **Repository:** [https://github.com/fenilpatel-Builds/pravah-ai](https://github.com/fenilpatel-Builds/pravah-ai)  
-**Supervity Auto Workspace:** `[INSERT_YOUR_SUPERVITY_WORKSPACE_URL]`  
+**Supervity Auto Workspace:** [https://auto.supervity.ai/u/alpha/agent/01a12a32-3e3d-702c-9c5f-dc55476b8ef0](https://auto.supervity.ai/u/alpha/agent/01a12a32-3e3d-702c-9c5f-dc55476b8ef0) (Org: `NexAura`)  
 
 ---
 

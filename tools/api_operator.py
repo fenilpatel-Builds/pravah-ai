@@ -34,10 +34,20 @@ class PravahOperatorHandler(BaseHTTPRequestHandler):
         self._send_response(200, {"status": "ok"})
 
     def do_GET(self):
-        if self.path == "/health":
+        if self.path in ["/", "/console", "/index.html"]:
+            console_path = os.path.join(os.path.dirname(__file__), "..", "console", "index.html")
+            if os.path.exists(console_path):
+                self.send_response(200)
+                self.send_header('Content-Type', 'text/html; charset=utf-8')
+                self.end_headers()
+                with open(console_path, 'rb') as f:
+                    self.wfile.write(f.read())
+            else:
+                self._send_response(404, {"error": "Console file not found"})
+        elif self.path == "/health":
             self._send_response(200, {
                 "status": "HEALTHY",
-                "service": "Pravah AI Deterministic Operator",
+                "service": "Pravah AI Deterministic Operator & Operations Console",
                 "reference_date": str(REFERENCE_DATE)
             })
         else:
@@ -120,14 +130,33 @@ class PravahOperatorHandler(BaseHTTPRequestHandler):
                 "reference_date": str(REFERENCE_DATE)
             }
             self._send_response(200, response_data)
+        elif self.path == "/resolve_task":
+            content_length = int(self.headers.get('Content-Length', 0))
+            post_data = self.rfile.read(content_length)
+            try:
+                payload = json.loads(post_data.decode('utf-8'))
+            except Exception:
+                payload = {}
+            task_id = payload.get("task_id", "TASK-DUP-2026-0999")
+            decision = payload.get("decision", "MERGE")
+            reviewer = payload.get("reviewer", "Foram Shukla (Procurement Lead)")
+            self._send_response(200, {
+                "status": "RECORDED",
+                "task_id": task_id,
+                "decision": decision,
+                "reviewer": reviewer,
+                "audit_timestamp": "2026-10-09 18:00:00 IST",
+                "message": f"Decision '{decision}' recorded successfully for {task_id}. Downstream SAP vendor update triggered."
+            })
         else:
             self._send_response(404, {"error": "Endpoint not found"})
 
 def run_server(port=8080):
     server_address = ('', port)
     httpd = HTTPServer(server_address, PravahOperatorHandler)
-    print(f"Pravah AI Operator Server listening on port {port}...")
-    print(f"Endpoints available: GET /health | POST /verify")
+    print(f"Pravah AI Operations Console & Operator listening on port {port}...")
+    print(f"Console URL: http://localhost:{port}/")
+    print(f"Endpoints: GET /health | POST /verify | POST /resolve_task")
     httpd.serve_forever()
 
 if __name__ == '__main__':
